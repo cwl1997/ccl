@@ -3,30 +3,12 @@
     <el-container>
       <el-aside class="app-side app-side-left"
                 :class="isCollapse ? 'app-side-collapsed' : 'app-side-expanded'">
-        <div class="app-side-logo">
-          <img src="@/assets/logo.png"
-               :width="isCollapse ? '60' : '60'"
-               height="60" />
-        </div>
         <div>
           <!-- 我是样例菜单 -->
-         <el-menu :default-active="defaultActive"
-        router
-          class="el-menu-vertical-demo"
-          @open="handleOpen"
-          :collapse="isCollapse">
-            <template v-for="route in $router.options.routes" v-if="route.children && route.children.length">
-      <template v-for="item in route.children" >
-        <el-menu-item 
-          :key="route.path + '/' + item.path"
-          :index="item.path"
-        >
-          <i class="el-icon-menu"></i>
-          <span slot="title">{{ item.name }}</span>
-      </el-menu-item>
-      </template>
-    </template>
-        </el-menu>
+        <el-aside class="app-side app-side-left"
+          :class="isCollapse ? 'app-side-collapsed' : 'app-side-expanded'">
+         <Sidebar :collapse="isCollapse" :routes="$router.options.routes[1].children"/>
+        </el-aside>
         </div>
       </el-aside>
 
@@ -75,8 +57,12 @@
 </template>
 
 <script>
+import Sidebar from '@/components/Sidebar'
 export default {
   name: 'Container',
+  components: {
+    Sidebar
+  },
   data() {
     return {
       username: '',
