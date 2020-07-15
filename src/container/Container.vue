@@ -4,7 +4,7 @@
       <el-aside class="app-side app-side-left"
                 :class="isCollapse ? 'app-side-collapsed' : 'app-side-expanded'">
         <div>
-          <!-- 我是样例菜单 -->
+          <!-- 我是样例菜单 21312-->
         <el-aside class="app-side app-side-left"
           :class="isCollapse ? 'app-side-collapsed' : 'app-side-expanded'">
          <Sidebar :collapse="isCollapse" :routes="$router.options.routes[1].children"/>
