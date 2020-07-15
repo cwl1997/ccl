@@ -68,14 +68,14 @@ export default {
       return path
     },
     handleOpen: function(key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     },
     handleClose: function(key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     }
   },
   mounted: function(){
-    console.log('sidebar routes: ', this.routes)
+    // console.log('sidebar routes: ', this.routes)
   }
 }
 </script>
