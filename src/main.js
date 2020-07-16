@@ -7,7 +7,10 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import '@/style/index.scss'
 import 'font-awesome/scss/font-awesome.scss'
+import axios from 'axios'
 
+
+Vue.prototype.$axios = axios
 Vue.use(ElementUI);
 Vue.config.productionTip = false
 
