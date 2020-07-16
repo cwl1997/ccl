@@ -72,6 +72,7 @@ export default {
   methods: {
     toggleSideBar() {
       this.isCollapse = !this.isCollapse
+      console.log(321)
     },
     logout: function () {
       this.$confirm('确认退出?', '提示', {})

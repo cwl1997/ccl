@@ -1,6 +1,6 @@
 <template>
     <div>
-       <el-button type="primary">主要按钮</el-button>
+       <el-button type="primary" @click="test">主要按钮</el-button>
     </div>
 </template>
 
@@ -15,7 +15,10 @@ export default {
 
 },
     methods: {
-
+        test(){
+            let session = window.sessionStorage
+            console.log(session)
+        }
   }
 }
 </script>

@@ -14,6 +14,7 @@
       <SidebarItem v-for="(item, idx) in routes" 
         :subroute="item"
         :fatherpath="fatherPath"
+        @click="test"
         :barIdx="idx" :key="idx" />
     </el-menu>
   </div>
@@ -42,6 +43,11 @@ export default {
     fatherPath(){
       // 这里直接获取路由配置的 '/' 项
       return this.$router.options.routes[1].path
+    }
+  },
+  methods:{
+    test(){
+      console.log(213)
     }
   }
 }
