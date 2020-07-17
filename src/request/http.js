@@ -2,7 +2,7 @@ import axios from "axios";
 import qs from "qs";
 
 const service = axios.create({
-    baseURL: '',  // api的base_url
+    baseURL: 'http://122221',  // api的base_url
     timeout: 5000  // 请求超时时间
 });
 
