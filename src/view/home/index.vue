@@ -23,16 +23,16 @@ export default {
            }
             // let session = window.sessionStorage
             // console.log(session)
-            this.$axios({
-                url:'https://api.jisuapi.com/shouji/query' ,
-                methods:'get',
-                data:params
-            }).then((res)=>{
-                console.log(res)
-            })
+            // this.$axios({
+            //     url:'https://api.jisuapi.com/shouji/query' ,
+            //     methods:'get',
+            //     data:params
+            // }).then((res)=>{
+            //     console.log(res)
+            // })
           
-        //    let res = await getPersondata(params)
-        //    console.log(res)
+           let res = await getPersondata(params)
+           console.log(res)
         }
   }
 }
